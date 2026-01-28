@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PW Institute of Innovation – Portfolio</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --bg: #020617;
@@ -16,38 +14,25 @@
       --muted: #9ca3af;
       --accent: linear-gradient(135deg, #6366f1, #22d3ee);
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
     body { background: radial-gradient(circle at top, #111827, var(--bg)); color: var(--text); line-height: 1.6; }
     a { text-decoration: none; color: inherit; }
-
     .hero { padding: 80px 20px 40px; text-align: center; max-width: 1100px; margin: auto; }
     .hero h1 { font-size: 3.2rem; font-weight: 800; background: var(--accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
     .hero p { color: var(--muted); font-size: 1.1rem; max-width: 700px; margin: auto; }
-
     section { max-width: 1200px; margin: auto; padding: 40px 20px; }
     section h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: 30px; display: flex; align-items: center; gap: 14px; color: #fff; }
     section h2 span { width: 40px; height: 4px; background: var(--accent); border-radius: 8px; }
-
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; }
-
-    .card { 
-      position: relative; background: var(--card); backdrop-filter: blur(12px); 
-      border: 1px solid var(--border); border-radius: 16px; padding: 24px; 
-      transition: all 0.3s ease; display: flex; flex-direction: column;
-    }
+    .card { position: relative; background: var(--card); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: all 0.3s ease; display: flex; flex-direction: column; }
     .card:hover { transform: translateY(-8px); border-color: #6366f1; box-shadow: 0 20px 40px rgba(0,0,0,0.4); background: rgba(255, 255, 255, 0.09); }
-
     .card h3 { font-size: 1.4rem; margin-bottom: 8px; color: #fff; }
     .desc { font-size: 0.92rem; color: #d1d5db; margin-bottom: 12px; line-height: 1.4; }
     .stack { font-size: 0.75rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; }
-    
     .card ul { padding-left: 18px; margin-bottom: 16px; flex-grow: 1; }
     .card ul li { font-size: 0.88rem; color: var(--muted); margin-bottom: 5px; }
-
     .outcome { font-size: 0.85rem; color: #22d3ee; font-weight: 600; padding-top: 12px; border-top: 1px solid var(--border); }
     .visit { margin-top: 12px; font-size: 0.88rem; color: #6366f1; font-weight: 600; display: block; }
-
     footer { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px; }
     @media (max-width: 768px) { .hero h1 { font-size: 2.4rem; } .grid { grid-template-columns: 1fr; } }
   </style>
@@ -56,7 +41,7 @@
 
   <div class="hero">
     <h1>PW Institute of Innovation</h1>
-    <p>A showcase of student-led technical excellence and entrepreneurial ventures.</p>
+    <p>A showcase of technical excellence and student-led entrepreneurial ventures.</p>
   </div>
 
   <section>
@@ -65,11 +50,11 @@
       
       <a href="https://indiecode.vercel.app/" target="_blank" class="card">
         <h3>IndieCode</h3>
-        <p class="desc">A full-stack competitive programming platform with integrated real-time code editing and evaluation.</p>
-        <div class="stack">React · Node · Redis · JWT · MongoDB</div>
+        <p class="desc">Full-stack competitive programming platform with integrated real-time code editing.</p>
+        <div class="stack">React · Node · Express · MongoDB · Redis · JWT</div>
         <ul>
-          <li>Real-time coding workspace with smooth UI</li>
           <li>Secure session handling via Redis integration</li>
+          <li>Real-time coding workspace with smooth UI</li>
           <li>Scalable RESTful APIs for problem submissions</li>
         </ul>
         <div class="outcome">Outcome: Seamless, scalable coding practice</div>
@@ -78,60 +63,60 @@
 
       <a href="https://resume.pwioi.club/" target="_blank" class="card">
         <h3>IntelliResume</h3>
-        <p class="desc">AI-powered analyzer that helps students optimize resumes for modern ATS algorithms.</p>
-        <div class="stack">FastAPI · Next.js · TypeScript · MongoDB</div>
+        <p class="desc">AI-powered analyzer optimizing resumes for modern ATS algorithms.</p>
+        <div class="stack">Python (FastAPI) · Next.js · TypeScript · MongoDB</div>
         <ul>
           <li>Calculates ATS compatibility scores instantly</li>
-          <li>Provides AI-driven skill gap recommendations</li>
-          <li>Built-in resume builder with real-time feedback</li>
+          <li>Provides actionable skill gap recommendations</li>
+          <li>Built-in builder with real-time feedback</li>
         </ul>
         <div class="outcome">Outcome: Higher interview success rates</div>
         <span class="visit">View Live Project →</span>
       </a>
 
-      <a href="https://www.pwleapx.com/" target="_blank" class="card">
-        <h3>PWLeapX</h3>
-        <p class="desc">A tech-execution and mentorship hub connecting early-stage ventures with talent.</p>
-        <div class="stack">React · TypeScript · Tailwind · Vite · Motion</div>
+      <a href="https://jobsphere.online/" target="_blank" class="card">
+        <h3>JobSphere</h3>
+        <p class="desc">Comprehensive job portal for employers and student job seekers.</p>
+        <div class="stack">Next.js · TypeScript · Express · PostgreSQL · Prisma</div>
         <ul>
-          <li>Technical execution support for 20+ startups</li>
-          <li>Community management for 500+ founders</li>
-          <li>Interactive UI with smooth framer-motion visuals</li>
+          <li>End-to-end job posting and applicant tracking</li>
+          <li>Secure backend with full-stack workflow</li>
+          <li>Real-time hiring status updates</li>
         </ul>
-        <div class="outcome">Outcome: Empowering the startup ecosystem</div>
-        <span class="visit">View Website →</span>
+        <div class="outcome">Outcome: Streamlined recruitment visibility</div>
+        <span class="visit">View Live Project →</span>
+      </a>
+
+      <a href="https://minli.info/" target="_blank" class="card">
+        <h3>Minli</h3>
+        <p class="desc">Feature-rich URL shortener with advanced analytics and security.</p>
+        <div class="stack">MERN Stack (MongoDB, Express, React, Node)</div>
+        <ul>
+          <li>Custom aliases, QR codes, and password protection</li>
+          <li>Detailed analytics (Daily clicks, device/browser)</li>
+          <li>Supports one-time links and expiration dates</li>
+        </ul>
+        <div class="outcome">Outcome: Fast, secure link sharing</div>
+        <span class="visit">View Live Project →</span>
       </a>
 
       <a href="https://app.pwioi.club/" target="_blank" class="card">
         <h3>Academic Management System</h3>
-        <p class="desc">The internal operating system for PW IOI, managing campus life, clubs, and data.</p>
-        <div class="stack">Node · TypeScript · PostgreSQL · Prisma · AWS</div>
+        <p class="desc">The internal operating system for PW IOI campus life and data.</p>
+        <div class="stack">Node · Express · TypeScript · PostgreSQL · Prisma · AWS</div>
         <ul>
           <li>Type-safe APIs managing 1,000+ active users</li>
           <li>Automated email workflows and AWS S3 storage</li>
           <li>Cron-job based automated reporting systems</li>
         </ul>
-        <div class="outcome">Outcome: Streamlined campus operations</div>
+        <div class="outcome">Outcome: Enhanced campus operations</div>
         <span class="visit">View Platform →</span>
-      </a>
-
-      <a href="https://github.com/RohitMakaniProfile/Multi-Modal-RAG-System" target="_blank" class="card">
-        <h3>Multimodal RAG System</h3>
-        <p class="desc">An advanced AI system that retrieves information from both text and image databases simultaneously.</p>
-        <div class="stack">CLIP · FAISS · FastAPI · Python</div>
-        <ul>
-          <li>Seamless multilingual queries via CLIP embeddings</li>
-          <li>High-speed vector retrieval using FAISS</li>
-          <li>Explainable AI-generated visual responses</li>
-        </ul>
-        <div class="outcome">Outcome: Context-aware multimodal search</div>
-        <span class="visit">GitHub Repository →</span>
       </a>
 
       <div class="card">
         <h3>CryptoSentinel</h3>
-        <p class="desc">AI-powered dashboard for real-time cryptocurrency tracking and market sentiment analysis.</p>
-        <div class="stack">React.js · Express · Ollama · Tailwind</div>
+        <p class="desc">AI-powered dashboard for real-time crypto tracking and sentiment analysis.</p>
+        <div class="stack">React.js · Tailwind CSS · Express.js · Ollama</div>
         <ul>
           <li>Tracks 50+ coins with 85% sentiment accuracy</li>
           <li>Reduces market research time by 70%</li>
@@ -139,6 +124,58 @@
         </ul>
         <div class="outcome">Outcome: Insight-driven crypto trading</div>
       </div>
+
+      <a href="https://www.pwleapx.com/" target="_blank" class="card">
+        <h3>PWLeapX</h3>
+        <p class="desc">A tech-execution hub connecting early-stage ventures with talent.</p>
+        <div class="stack">React · TypeScript · Tailwind · Vite · Motion</div>
+        <ul>
+          <li>Technical execution support for 20+ startups</li>
+          <li>Community management for 500+ founders</li>
+          <li>Smooth framer-motion based interactive UI</li>
+        </ul>
+        <div class="outcome">Outcome: Empowering startup growth</div>
+        <span class="visit">View Website →</span>
+      </a>
+
+      <a href="https://structify.vercel.app/" target="_blank" class="card">
+        <h3>Data Structure Visualizer</h3>
+        <p class="desc">Interactive tool for understanding complex computer science concepts.</p>
+        <div class="stack">React.js · GSAP · Tailwind CSS</div>
+        <ul>
+          <li>Visualizes 8+ data structures with animations</li>
+          <li>Modular architecture for easy tool expansion</li>
+          <li>Real-time user interaction with logic flow</li>
+        </ul>
+        <div class="outcome">Outcome: Improved conceptual clarity</div>
+        <span class="visit">View Live Project →</span>
+      </a>
+
+      <a href="https://github.com/RohitMakaniProfile/youtube-study-assistant" target="_blank" class="card">
+        <h3>EduTube Coach</h3>
+        <p class="desc">Study assistant that transforms video lectures into revision material.</p>
+        <div class="stack">FastAPI · Groq · LangChain · Whisper · SQLite</div>
+        <ul>
+          <li>ASR to flashcards & spaced revision pipeline</li>
+          <li>Multilingual prompting with contextual grounding</li>
+          <li>Latency & hallucination evaluation hooks</li>
+        </ul>
+        <div class="outcome">Outcome: Efficient lecture retention</div>
+        <span class="visit">GitHub Repository →</span>
+      </a>
+
+      <a href="https://github.com/RohitMakaniProfile/Multi-Modal-RAG-System" target="_blank" class="card">
+        <h3>Multimodal RAG</h3>
+        <p class="desc">AI system that retrieves information from both text and image databases.</p>
+        <div class="stack">CLIP · FAISS · FastAPI · Python</div>
+        <ul>
+          <li>Seamless multilingual queries via CLIP embeddings</li>
+          <li>High-speed vector retrieval using FAISS</li>
+          <li>Real-time indexing with evaluation logs</li>
+        </ul>
+        <div class="outcome">Outcome: Context-aware multimodal search</div>
+        <span class="visit">GitHub Repository →</span>
+      </a>
 
     </div>
   </section>
@@ -149,11 +186,11 @@
 
       <div class="card">
         <h3>Aasta</h3>
-        <p class="desc">A food-tech venture focused on sustainability by redistributing surplus restaurant meals.</p>
+        <p class="desc">Food-tech venture focused on sustainability by redistributing surplus meals.</p>
         <div class="stack">Food-Tech · Sustainability · Cloud Kitchens</div>
         <ul>
-          <li>Reduces food waste by selling surplus items</li>
-          <li>Partners with cloud kitchens for value recovery</li>
+          <li>Helps businesses recover value from unsold items</li>
+          <li>Reduces environmental impact of food waste</li>
           <li>Provides high-quality meals at discounted rates</li>
         </ul>
         <div class="outcome">Outcome: Sustainable, affordable food model</div>
@@ -161,10 +198,10 @@
 
       <div class="card">
         <h3>Celestial</h3>
-        <p class="desc">A premium wellness brand specializing in lab-certified gemstones and spiritual jewellery.</p>
+        <p class="desc">Wellness brand specializing in lab-certified gemstones and spiritual jewellery.</p>
         <div class="stack">E-commerce · Wellness · Artisan</div>
         <ul>
-          <li>Products tailored to zodiac and spiritual intentions</li>
+          <li>Products tailored to zodiac energies and intentions</li>
           <li>Handcrafted accessories with artisan focus</li>
           <li>Authenticity-first approach with certified stones</li>
         </ul>
@@ -175,9 +212,8 @@
   </section>
 
   <footer>
-    © PW Institute of Innovation · Built by Students, for the Future
+    © 2026 PW Institute of Innovation · Built by Students, for the Future
   </footer>
 
 </body>
-
 </html>
